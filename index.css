@@ -1,0 +1,60 @@
+body {
+    margin: 30px;
+    padding: 0;
+    display: flex;
+    background-color: rgb(84, 6, 22);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+button {
+    margin-left: 8px;
+}
+
+.measure {
+    width: 410px;
+    
+}
+
+#flower-title {
+    text-align: center;
+    margin: auto;
+    color: rgb(183, 140, 91);
+    font-size: 55px;
+    font-family: cursive;
+    text-shadow: -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black;
+}
+
+.image {
+    height: 400px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    border: 10px double black;
+    
+}
+
+.text {
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+#tab-content {
+    height: 100%;
+    background-color: beige;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 3%;
+    background-image: url("/images/book-like-cover.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow: 15px 0px rgb(98, 89, 89);
+
+}
