@@ -5,7 +5,6 @@ const img = document.getElementById("image")
 const text = document.getElementById("text")
 const title = document.getElementById("flower-title")
 const content = document.getElementById("tab-content")
-const whiteBG = document.getElementById("white-bg")
 
 //array of button ids
 let buttons = [
@@ -53,7 +52,7 @@ function bgChange() {
 }
 
 // fetching flower description from json file
-fetch("textdata.json")
+fetch("/data/textdata.json")
     .then(response => response.json())
     .then(data => {
         textData = data
@@ -65,7 +64,7 @@ fetch("textdata.json")
 function tabOne() {
     content.style.backgroundImage = "none"
     title.innerHTML = "Chrysanthemums"
-    img.src = "images/Chrysanthemum.jpeg"
+    img.src = "/images/Chrysanthemum.jpeg"
     img.style.border = "20px ridge rgb(226, 165, 198)"
     text.innerHTML = textData.chrysanthemums.replace(/\n/g, "<br>")
     
@@ -75,7 +74,7 @@ function tabOne() {
 function tabTwo() {
     content.style.backgroundImage = "none"
     title.innerHTML = "Lavender"
-    img.src = "images/lavender.jpeg"
+    img.src = "/images/lavender.jpeg"
     img.style.border = "20px ridge purple"
     text.innerHTML = textData.lavender.replace(/\n/g, "<br>")
 
@@ -85,7 +84,7 @@ function tabTwo() {
 function tabThree() {
     content.style.backgroundImage = "none"
     title.innerHTML = "Orchids"
-    img.src = "images/orchids.jpeg"
+    img.src = "/images/orchids.jpeg"
     img.style.border = "20px ridge rgb(255, 253, 198)"
     text.innerHTML = textData.orchids.replace(/\n/g, "<br>")
 
@@ -95,7 +94,7 @@ function tabThree() {
 function tabFour() {
     content.style.backgroundImage = "none"
     title.innerHTML = "Spider Lily"
-    img.src = "images/spider-lily.jpeg"
+    img.src = "/images/spider-lily.jpeg"
     img.style.border = "20px ridge rgb(70, 3, 16)"
     text.innerHTML = textData.spiderlily.replace(/\n/g, "<br>")
 
